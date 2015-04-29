@@ -1,0 +1,26 @@
+{
+  "name": "line-trace",
+  "version": "1.0.0",
+  "description": "Trace print with source filename, function and line numbers",
+  "main": "index.js",
+  "scripts": {
+    "test": "test \"$(node test.js)\" = '[test.js:5] {\"x\":2}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mvertes/line-trace.git"
+  },
+  "keywords": [
+    "trace",
+    "line",
+    "function",
+    "source",
+    "debug"
+  ],
+  "author": "Marc Vertes <mvertes@free.fr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mvertes/line-trace/issues"
+  },
+  "homepage": "https://github.com/mvertes/line-trace"
+}
