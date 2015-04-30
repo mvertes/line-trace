@@ -1,6 +1,6 @@
 {
   "name": "line-trace",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Trace print with source filename, function and line numbers",
   "main": "index.js",
   "scripts": {
