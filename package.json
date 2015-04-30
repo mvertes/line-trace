@@ -4,7 +4,7 @@
   "description": "Trace print with source filename, function and line numbers",
   "main": "index.js",
   "scripts": {
-    "test": "test \"$(node test.js)\" = '[test.js:5] {\"x\":2}'"
+    "test": "test \"$(node test.js)\" = '[test.js:5 ?] res: {\"x\":2}'"
   },
   "repository": {
     "type": "git",

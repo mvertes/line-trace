@@ -2,4 +2,4 @@
 
 var trace = require('./');
 
-trace({x: 2});
+trace('res: %j', {x: 2});

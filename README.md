@@ -1,4 +1,6 @@
 # line-trace
+[![Build Status](https://travis-ci.org/mvertes/line-trace.svg?branch=master)](https://travis-ci.org/mvertes/line-trace)
+
 Trace print with source filename, function and line numbers.
 
 ## Install
