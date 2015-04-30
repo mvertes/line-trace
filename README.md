@@ -23,8 +23,8 @@ will generate:
 
 ```
 [test.js:4 f] 34
-[test.js:8] [1,2,"foo"]
-[test.js:9] label {"a":1,"b":2}
+[test.js:8 ?] [1,2,"foo"]
+[test.js:9 ?] label {"a":1,"b":2}
 ```
 
 ## License

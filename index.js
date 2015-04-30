@@ -11,15 +11,15 @@ function getStack() {
 module.exports = function trace() {
 	var args = Array.prototype.slice.call(arguments);
 	var stack = getStack();
-	var file = stack[1].getFileName().replace(/.*\//, '');
+	var file = stack[1].getFileName() || '?';
 	var line = stack[1].getLineNumber();
-	var func = stack[1].getFunctionName();
+	var func = stack[1].getFunctionName() || '?';
 
-	func = func ? ' ' + func : '';
+	file = file.replace(/.*\//, '');
 	if (args.length === 1) {
-		args.splice(0, 0, '[%s:%s%s] %j', file, line, func);
+		args.splice(0, 0, '[%s:%s %s] %j', file, line, func);
 	} else {
-		args[0] = '[%s:%s%s] ' + args[0];
+		args[0] = '[%s:%s %s] ' + args[0];
 		args.splice(1, 0, file, line, func);
 	}
 	console.log.apply(this, args);
