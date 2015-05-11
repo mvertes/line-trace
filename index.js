@@ -22,5 +22,5 @@ module.exports = function trace() {
 		args[0] = '[%s:%s %s] ' + args[0];
 		args.splice(1, 0, file, line, func);
 	}
-	console.log.apply(this, args);
+	console.error.apply(this, args);
 };
