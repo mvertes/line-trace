@@ -1,10 +1,10 @@
 {
   "name": "line-trace",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Trace print with source filename, function and line numbers",
-  "main": "index.js",
+  "main": "line-trace.js",
   "scripts": {
-    "test": "test \"$(node test.js 2>&1)\" = '[test.js:5 ?] res: {\"x\":2}'"
+    "test": "test \"$(node test.js 2>&1)\" = '[test.js:6 ?] res: {\"x\":2}'"
   },
   "repository": {
     "type": "git",

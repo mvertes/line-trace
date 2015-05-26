@@ -27,6 +27,4 @@ module.exports = function trace() {
 	tracer.apply(this, args);
 };
 
-module.exports.setTracer = function(f) {
-	tracer = f;
-};
+module.exports.setTracer = function setTracer(f) {tracer = f;}
