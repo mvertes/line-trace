@@ -1,10 +1,10 @@
 {
   "name": "line-trace",
-  "version": "1.0.4",
-  "description": "Trace print with source filename, function and line numbers",
+  "version": "1.0.5",
+  "description": "Trace print with pid, source filename, function and line numbers",
   "main": "line-trace.js",
   "scripts": {
-    "test": "test \"$(node test.js 2>&1)\" = '[test.js:6 ?] res: {\"x\":2}'"
+    "test": "case $(node test.js 2>&1) in (*test.js:6*) true;; (*) false;; esac"
   },
   "repository": {
     "type": "git",

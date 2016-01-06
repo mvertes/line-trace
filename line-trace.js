@@ -19,10 +19,10 @@ module.exports = function trace() {
 
 	file = file.replace(/.*\//, '');
 	if (args.length === 1) {
-		args.splice(0, 0, '[%s:%s %s] %j', file, line, func);
+		args.splice(0, 0, '[%d %s:%s %s] %j', process.pid, file, line, func);
 	} else {
-		args[0] = '[%s:%s %s] ' + args[0];
-		args.splice(1, 0, file, line, func);
+		args[0] = '[%d %s:%s %s] ' + args[0];
+		args.splice(1, 0, process.pid, file, line, func);
 	}
 	tracer.apply(this, args);
 };
