@@ -1,7 +1,7 @@
 # line-trace
 [![Build Status](https://travis-ci.org/mvertes/line-trace.svg?branch=master)](https://travis-ci.org/mvertes/line-trace)
 
-Trace print with source filename, function and line numbers.
+Trace print with process PID, source filename, function and line numbers.
 
 ## Install
 ```
@@ -24,9 +24,9 @@ trace("%s %j", "label", {a:1, b:2});
 will generate:
 
 ```
-[test.js:4 f] 34
-[test.js:8 ?] [1,2,"foo"]
-[test.js:9 ?] label {"a":1,"b":2}
+[125 test.js:4 f] 34
+[125 test.js:8 ?] [1,2,"foo"]
+[125 test.js:9 ?] label {"a":1,"b":2}
 ```
 
 ## License
